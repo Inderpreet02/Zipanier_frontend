@@ -1,0 +1,51 @@
+.filter__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.prodlist__title{
+    margin: 20px;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.filter__item{
+    display: flex;
+    align-items: center;
+}
+
+.filter__text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.filter__select{
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.filter__option{
+    padding: 20px
+}
+
+@media only screen and (max-width: 480px){
+    .filter__container{
+        width: 0px 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter__item{
+        padding-bottom: 10px;
+    }
+
+    .filter__text{
+        /* margin-right: 0px; */
+    }
+
+    .filter__select{
+        margin: 10px 0px;
+    }
+}

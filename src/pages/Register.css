@@ -1,0 +1,46 @@
+.register__container{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://images.pexels.com/photos/428338/pexels-photo-428338.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1") center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.regsiter__wrapper{
+    width: 40%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid teal;
+}
+
+.register__title{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.register__form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.register__input{
+    flex: 1;
+    min-width: 40%;
+    margin: 20px 10px 0 0;
+    padding: 10px;
+}
+
+.register__agreement{
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.register__btn{
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    background-color: teal;
+    color: #fff;
+}
