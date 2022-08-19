@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './Navbar copy.css';
 import Fashion from './Fashion';
 import Electronics from './Electronics';
 import Home from './Home';

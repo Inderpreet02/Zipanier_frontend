@@ -1,5 +1,5 @@
 import Annoucements from "./components/Annoucements";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar.js";
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
