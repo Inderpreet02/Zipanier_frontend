@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import Annoucements from '../components/Annoucements'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar1'
 import Newsletter from '../components/Newsletter'
 import { addProduct } from '../redux/cartRedux'
 import { publicRequest } from '../requestMethods'
@@ -50,6 +50,8 @@ const ProductPage = () => {
 
         getProduct();
     }, [id])
+
+    console.log(color, " " , size);
   return (
     <div className='prodpage__container'>
         <Navbar/>
@@ -80,10 +82,10 @@ const ProductPage = () => {
 
                             <div className="prodpage__filter">
                                 <div className="prodpage__filterTitle">Size</div>
-                                <select className="prodpage__filterSize" onChange={(e) => setSize(e.target.value)}>
+                                <select className="prodpage__filterSize" value={size} onChange={(e) => setSize(e.target.value)}>
                                     {
                                         product.size?.map((s) => (
-                                            <option className="prodpage__filterSizeOption"  key={s}>{s}</option>
+                                            <option className="prodpage__filterSizeOption" value={s} key={s}>{s}</option>
                                         ))
                                     }
                                     {/* <option className="prodpage__filterSizeOption">S</option>

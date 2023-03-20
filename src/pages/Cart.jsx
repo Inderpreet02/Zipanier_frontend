@@ -1,7 +1,7 @@
 import React from 'react'
 import Annoucements from '../components/Annoucements'
 import Footer from '../components/Footer'
-import Navbar from '../components/Navbar'
+import Navbar from '../components/Navbar1'
 import './Cart.css'
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiOutlineMinus } from "react-icons/ai";
@@ -44,8 +44,8 @@ const Cart = () => {
                       <div className="cart__prodId">
                         <b>ID:</b> {product._id}
                       </div>
-                      <div className="cart__prodColor">
-    
+                      <div className="cart__prodColor" style={{backgroundColor : `${product.color}`}}>
+
                       </div>
                       <div className="cart__prodSize">
                         <b>Size:</b> {product.size}
